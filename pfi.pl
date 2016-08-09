@@ -1,7 +1,12 @@
 #!/usr/bin/perl
 
 # pfi.pl - Popular First Initials
+# Eric Conrad
+# Twitter: @eric_conrad
+# Github: https://github.com/eric-conrad/enumer8
+#
 # Ranks first initials in order of popularity, per the 1990 US Census
+# Written Perl (for now) because I can code Perl 4x faster than Python
 #
 # Usage:
 # cat dist.female.first.txt dist.female.first.txt| pfi.pl |sort -rn -k2
