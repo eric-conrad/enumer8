@@ -11,7 +11,7 @@
 # http://www2.census.gov/topics/genealogy/1990surnames/dist.male.first
 # 
 # Data skews older ("Mary" is the most common first female name), do not
-# have comprehensive list of more rcent first names (such as the 2000 census)
+# have a comprehensive list of more recent first names (such as the 2000 census)
 
 my %total; # Hash of total percentage of popularity of first initial
 my @line;  # Array of current input line
