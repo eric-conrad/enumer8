@@ -41,7 +41,6 @@ def sshconnect(host, user, port, password):
   try:
     ssh.connect(host, username=user, port=port, password=password)
   except:
-    #print round(time.time()-starttime,2), user
     print round(time.time()-starttime,2)
 
 if (not os.path.isfile(file)):
