@@ -4,7 +4,7 @@
 # Ranks first initials in order of popularity, per the 1990 US Census
 #
 # Usage:
-# cat dist.female.first.txt dist.female.first.txt| ./initial-percent.pl |sort -rn -k2
+# cat dist.female.first.txt dist.female.first.txt| pfi.pl |sort -rn -k2
 
 # Data source: http://www2.census.gov/topics/genealogy/1990surnames/
 # http://www2.census.gov/topics/genealogy/1990surnames/dist.female.first
