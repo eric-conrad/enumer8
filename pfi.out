@@ -1,4 +1,4 @@
-# cat dist.female.first.txt dist.female.first.txt | ./pfi.pl | sort -rn -k2
+# cat dist.female.first.txt dist.male.first.txt | ./pfi.pl | sort -rn -k2
 m 22.23
 j 16.36
 s 14.07
