@@ -21,7 +21,7 @@ import string
 file='wordlists/US-census2000-lastnames-top-100.txt'
 host='www.example.com'
 password='A'*25000
-port=21
+port=22
 
 # Set to 1 to prepend a first initial
 guessinitial=1
