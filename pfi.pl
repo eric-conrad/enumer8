@@ -29,5 +29,5 @@ while (<>){
   $total{$init}+=$line[1];
 }
 foreach $key (keys %total) {
-    printf ("%s %.2f\n",$key,$total{$key});
+    printf ("%s %.2f\n",$key,($total{$key})/2);
 }
