@@ -9,7 +9,7 @@
 # Written Perl (for now) because I can code Perl 4x faster than Python
 #
 # Usage:
-# cat dist.female.first.txt dist.female.first.txt| pfi.pl |sort -rn -k2
+# cat dist.female.first.txt dist.male.first.txt| pfi.pl |sort -rn -k2
 
 # Data source: http://www2.census.gov/topics/genealogy/1990surnames/
 # http://www2.census.gov/topics/genealogy/1990surnames/dist.female.first
